@@ -13,7 +13,7 @@ function MainAvatar({ handleClick, currentAvatar }) {
       <img
         src={require(`../avatars/${currentAvatar.src}`)}
         className="Avatar-img"
-        alt="main-avatar"
+        alt={`MainAvatar: ${currentAvatar.label}`}
       />
     </button>
   );

@@ -46,9 +46,9 @@ class AvatarPicker extends Component {
 
   handleClickOutside = event => {
     if (
+      this.state.isAvatarPickerOpen &&
       this.popover &&
-      !this.popover.contains(event.target) &&
-      this.state.isAvatarPickerOpen
+      !this.popover.contains(event.target)
     ) {
       Promise.resolve("Start")
         .then(this.beginScaleOutAnimation)
@@ -76,7 +76,7 @@ class AvatarPicker extends Component {
           <Popover
             avatarList={avatarList}
             closeAvatarPicker={this.closeAvatarPicker}
-            scaleOutClass={scaleOutClass && scaleOutClass}
+            scaleOutClass={scaleOutClass}
           />
         )}
       </div>

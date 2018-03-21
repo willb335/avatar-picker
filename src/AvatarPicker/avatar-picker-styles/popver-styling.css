@@ -98,6 +98,7 @@ ul.Avatar-list-container li.Default {
 }
 
 ul.Avatar-list-container li.First-child {
+  position: relative;
   float: left;
   display: inline;
   box-sizing: border-box;
@@ -136,7 +137,10 @@ ul.Avatar-list-container li.Default:nth-child(4n + 1) {
   cursor: pointer;
 }
 
-ul.Avatar-list-container li.Default:hover:before {
+ul.Avatar-list-container li.Default:hover:before,
+ul.Avatar-list-container li.Default:focus:before,
+ul.Avatar-list-container li.First-child:hover:before,
+ul.Avatar-list-container li.First-child:focus:before {
   opacity: 0.2;
 }
 
@@ -148,7 +152,8 @@ ul.Avatar-list-container li.Default:focus {
   border: 3px solid rgb(155, 160, 163);
 }
 
-ul.Avatar-list-container li.Default:before {
+ul.Avatar-list-container li.Default:before,
+ul.Avatar-list-container li.First-child:before {
   box-sizing: border-box;
   content: "";
   position: absolute;
