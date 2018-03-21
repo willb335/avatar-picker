@@ -7,6 +7,12 @@
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"
   },
+  "devDependencies": {
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prop-types": "^15.6.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
