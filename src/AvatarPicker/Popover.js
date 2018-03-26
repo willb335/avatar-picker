@@ -24,7 +24,7 @@ class Popover extends Component {
     const { isAvatarSelected, avatarSelected } = this.state;
     if (i === 0) {
       return "First-child";
-    } else if (isAvatarSelected && i === avatarSelected && i !== 0) {
+    } else if (isAvatarSelected && i === avatarSelected) {
       return "Loading";
     } else {
       return "Default";

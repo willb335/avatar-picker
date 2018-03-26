@@ -3,8 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: scaleUp 250ms ease-in-out;
-  animation-iteration-count: 1;
+  animation: scaleUp 250ms ease-in-out 1;
 }
 
 @keyframes scaleUp {
@@ -24,8 +23,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: scaleOut 200ms linear;
-  animation-iteration-count: 1;
+  animation: scaleOut 200ms linear 1;
 }
 
 @keyframes scaleOut {
@@ -41,7 +39,6 @@
 .Triangle {
   width: 0;
   height: 0;
-  /* bottom: 8px; */
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-bottom: 8px solid rgb(44, 48, 51);
@@ -75,18 +72,14 @@
 }
 
 ul.Avatar-list-container {
-  /* position: relative; */
-  width: 100%;
-  /* text-align: center; */
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 ul.Avatar-list-container li.Default {
-  /* position: relative; */
+  position: relative;
   float: left;
-  /* display: inline; */
   box-sizing: border-box;
   padding: 0;
   margin: 7px;
@@ -98,9 +91,8 @@ ul.Avatar-list-container li.Default {
 }
 
 ul.Avatar-list-container li.First-child {
-  /* position: relative; */
+  position: relative;
   float: left;
-  /* display: inline; */
   box-sizing: border-box;
   padding: 0;
   margin: 7px 7px 7px 0px;
@@ -112,8 +104,8 @@ ul.Avatar-list-container li.First-child {
 }
 
 ul.Avatar-list-container li.Default:nth-child(4n) {
+  position: relative;
   float: left;
-  /* display: inline; */
   box-sizing: border-box;
   padding: 0;
   margin: 7px 0px 7px 7px;
@@ -125,8 +117,8 @@ ul.Avatar-list-container li.Default:nth-child(4n) {
 }
 
 ul.Avatar-list-container li.Default:nth-child(4n + 1) {
+  position: relative;
   float: left;
-  /* display: inline; */
   box-sizing: border-box;
   padding: 0;
   margin: 7px 7px 7px 0px;
@@ -156,26 +148,24 @@ ul.Avatar-list-container li.Default:before,
 ul.Avatar-list-container li.First-child:before {
   box-sizing: border-box;
   content: "";
-  /* position: absolute; */
+  position: absolute;
+  border-radius: 50%;
   opacity: 0;
   height: 100%;
   width: 100%;
-  border-radius: 50%;
   background-color: rgb(122, 161, 178);
   margin: 0;
   padding: 0;
 }
 
 ul.Avatar-list-container li.Loading:nth-child(4n) {
-  /* position: relative; */
   float: left;
-  /* display: inline; */
   box-sizing: border-box;
+  position: relative;
   padding: 0;
   margin: 7px 0px 7px 7px;
   height: 60px;
   width: 60px;
-  /* border-radius: 50%; */
   border: 3px solid transparent;
   display: flex;
   justify-content: center;
@@ -183,15 +173,13 @@ ul.Avatar-list-container li.Loading:nth-child(4n) {
 }
 
 ul.Avatar-list-container li.Loading:nth-child(4n + 1) {
-  /* position: relative; */
   float: left;
-  /* display: inline; */
   box-sizing: border-box;
+  position: relative;
   padding: 0;
   margin: 7px 7px 7px 0px;
   height: 60px;
   width: 60px;
-  /* border-radius: 50%; */
   border: 3px solid transparent;
   display: flex;
   justify-content: center;
@@ -199,15 +187,13 @@ ul.Avatar-list-container li.Loading:nth-child(4n + 1) {
 }
 
 ul.Avatar-list-container li.Loading {
-  /* position: relative; */
   float: left;
-  /* display: inline; */
   box-sizing: border-box;
+  position: relative;
   padding: 0;
   margin: 7px;
   height: 60px;
   width: 60px;
-  /* border-radius: 50%; */
   border: 3px solid transparent;
   display: flex;
   justify-content: center;
@@ -216,19 +202,16 @@ ul.Avatar-list-container li.Loading {
 
 ul.Avatar-list-container li.Loading:before {
   content: "";
-  box-sizing: border-box;
   position: absolute;
   margin: 0;
   padding: 0;
   border-radius: 50%;
   background: transparent;
-  width: 60px;
-  height: 60px;
-  z-index: 500;
+  width: 100%;
+  height: 100%;
   border: 3px solid rgb(122, 161, 178);
   border-bottom: 3px solid black;
-  animation: loading 1s linear infinite;
-  animation-iteration-count: 1;
+  animation: loading 1s linear 1;
 }
 
 @keyframes loading {
