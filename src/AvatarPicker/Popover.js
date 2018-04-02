@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Proptypes from "prop-types";
-import "./avatar-picker-styles/popver-styling.css";
+import "./avatar-picker-styles/popover-styling.css";
 
 class Popover extends Component {
   static propTypes = {
@@ -37,9 +37,9 @@ class Popover extends Component {
     }
   };
 
-  getAvatar = ({ src, id, label }, i) => (
+  getAvatar = ({ src, label }, i) => (
     <li
-      key={id}
+      key={label}
       className={this.getClassname(i)}
       style={{ outline: "none" }}
       onClick={e => this.handleAvatarListItemClick(e, i)}
@@ -60,8 +60,8 @@ class Popover extends Component {
         <div className="Popover">
           <div className="Choose-avatar-text">{"Choose your avatar"}</div>
           <ul className="Avatar-list-container">
-            {avatarList.map(({ src, id, label }, i) =>
-              this.getAvatar({ src, id, label }, i)
+            {avatarList.map(({ src, label }, i) =>
+              this.getAvatar({ src, label }, i)
             )}
           </ul>
         </div>
