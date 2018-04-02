@@ -26,7 +26,7 @@ class AvatarPicker extends Component {
   beginScaleOutAnimation = () => {
     return new Promise(resolve => {
       this.setState({ scaleOutClass: "Scale-out" });
-      setTimeout(() => resolve(), 150);
+      setTimeout(() => resolve(), 200);
     });
   };
 

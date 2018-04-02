@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: scaleUp 250ms ease-in-out 1;
+  animation: scaleUp 250ms ease-in-out;
+  animation-iteration-count: 1;
 }
 
 @keyframes scaleUp {
@@ -23,7 +24,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: scaleOut 200ms linear 1;
+  animation: scaleOut 200ms linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes scaleOut {
@@ -32,6 +35,10 @@
   }
 
   80% {
+    transform: scale(0);
+  }
+
+  100% {
     transform: scale(0);
   }
 }
