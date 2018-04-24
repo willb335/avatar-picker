@@ -13,8 +13,9 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.
-See the section about [running tests](#running-tests) for more information.
 
-Thanks for the project, I really enjoyed it! :smile:
+---
+
+This project was based on the parameters set by: [https://github.com/JoinColony/coding-challenge](https://github.com/JoinColony/coding-challenge/blob/master/readme.md).
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
