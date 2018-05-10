@@ -1,3 +1,7 @@
+## Working Demo:
+
+https://willb335.github.io/avatar-picker
+
 ## Available Scripts
 
 In the project directory, you can run:
